@@ -1,0 +1,100 @@
+body{
+    /* margin: 0; */
+    font-family: "montserrat",sans-serif;
+    background-color: #87CEEB;
+    opacity : 1;
+}
+.container{
+    background-color: #FFCCCB;
+    opacity: 0.7;
+    box-shadow: 0 0 20px rgba(0,0,2,.2);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 80px;
+    border-radius: 5px;
+    padding : 20px;
+}
+form{
+    opacity:1;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0 0;
+    margin-bottom: 25px;
+    
+}
+form input[type="text"]{
+    opacity: 1;
+    width:67%;
+    padding:8px;
+    border:#FFCCCB;
+    border:none;
+    opacity:10;
+    background-color : #FFCCCB;
+    font-size: 15px;
+    justify-content: center;
+    outline:none;
+    margin-top: 5px;
+
+    
+}
+form input[type="submit"]{
+    padding:10px 25px;
+    margin-top:5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: aliceblue;
+    color: black;
+    border:none;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor:pointer;
+    transtition:background-color .3s ease;
+}
+form input[type="submit"]:hover{
+    background-color: #87CEEB;
+}
+.icon img{
+    width:100px;
+    height:100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.temperature{
+    font-size : 40px;
+    font-weight: bold;
+    margin:15px 0px;
+}
+.description{
+    font-size : 30px;
+    margin-bottom:20px;
+    
+}
+.details{
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap:wrap;
+    border-radius: 50%;
+    border-radius:50%; 
+}
+.details > div{
+    padding :20px;
+    background-color: #87CEEB;
+    margin:10px;
+    flex:1;
+    text-align:center;
+    min-height:40px;
+    border-radius: 5px;
+}
+
+@media (max-width:768px){
+    form{
+        flex-direction:column;
+    }
+    form input[type="text"]{
+        width:100%;
+        margin:10px;
+    }
+}
